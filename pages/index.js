@@ -8,7 +8,8 @@ import code from '../public/code.png';
 import consulting from '../public/consulting.png';
 
 
-
+// Utilizing Tailwind CSS to design the portfolio page of my website. This build was adopted and reference from developedbyed. 
+// With little changes to my images added and component colors. But innovative use of tailwind.
 export default function Home() {
   return (
     <div>
@@ -18,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-white px-10">
+      <main className=" bg-blue px-10">
         <section className= "max-h-screen">
           <nav classname="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbychukky</h1>
@@ -50,6 +51,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1">Services I Offer</h3>
+            <h4 className= "text-4xl py-2">TrySomething New</h4>
             <p className="text-md py-2 leading-8 text-gray-80">
               Since the beginning of my journey as a freelance developer, I've done some remote jobs for leading <span className= "text-blue-600">organisations </span>in the business world and also implemented projects for <span className= "text-blue-600">startups</span>
             </p>
