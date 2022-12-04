@@ -6,10 +6,14 @@ import deved from '../public/dev-ed-wave.png';
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
 
 
-// Utilizing Tailwind CSS to design the portfolio page of my website. This build was adopted and reference from developedbyed. 
-// With little changes to my images added and component colors. But innovative use of tailwind.
+////////// To adjust the screen settings for the application to fit a mobile device screen you add (md:px-20 lg:px-40)
 export default function Home() {
   return (
     <div>
@@ -19,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" bg-blue px-10">
+      <main className=" bg-white px-10 md:px-20 lg:px-40">
         <section className= "max-h-screen">
           <nav classname="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">developedbychukky</h1>
@@ -30,9 +34,9 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Emmanuel Opara</h2>
-            <h3 className= "text-2xl py-2">Developer and Data Research Analyst</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Emmanuel Opara</h2>
+            <h3 className= "text-2xl py-2 md:text-3xl">Developer and Data Research Analyst</h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto">
               Freelancer providing programming services for career-based students
             </p>
           </div>
@@ -41,7 +45,7 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillYoutube />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-yellow-400 rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-yellow-400 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover" />
 
           </div>
@@ -51,18 +55,95 @@ export default function Home() {
         <section>
           <div>
             <h3 className="text-3xl py-1">Services I Offer</h3>
-            <h4 className= "text-4xl py-2">TrySomething New</h4>
             <p className="text-md py-2 leading-8 text-gray-80">
               Since the beginning of my journey as a freelance developer, I've done some remote jobs for leading <span className= "text-blue-600">organisations </span>in the business world and also implemented projects for <span className= "text-blue-600">startups</span>
             </p>
           </div>
-          <div>
+          <div className="lg:flex gap-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10">
             <Image src={design} width={100} height={100} />
-            <h3>Simple Web development projects</h3>
+            <h3 className="text-lg font-medium pt-8 pb-2 ">Simple Web development projects</h3>
             <p>
               Created using next.js, react designs suited to run on localhost
             </p>
+            <h4 className="py-4 text-red-500"> Design tools I use</h4>
+            <p className= "py-1 text-teal-600">Python Scripts</p>
+            <p className= "py-1 text-yellow-600">JavaScripts</p>
+            <p className= "py-1 text-teal-600">TypeScripts</p>
 
+          </div>
+          </div>
+          <div>
+
+          </div>
+          <div className="lg:flex gap-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <Image src={code} width={100} height={100} />
+            <h3 className="text-lg font-medium pt-8 pb-2 ">Simple Web development projects</h3>
+            <p>
+              Created using next.js, react designs suited to run on localhost
+            </p>
+            <h4 className="py-4 text-red-500"> Design tools I use</h4>
+            <p className= "py-1 text-teal-600">Python Scripts</p>
+            <p className= "py-1 text-yellow-600">JavaScripts</p>
+            <p className= "py-1 text-teal-600">TypeScripts</p>
+
+          </div>
+          </div>
+          <div className="lg:flex gap-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10 lg:flex gap-10">
+            <Image src={consulting} width={100} height={100} />
+            <h3 className="text-lg font-medium pt-8 pb-2 ">Simple Web development projects</h3>
+            <p>
+              Created using next.js, react designs suited to run on localhost
+            </p>
+            <h4 className="py-4 text-red-500"> Design tools I use</h4>
+            <p className= "py-1 text-teal-600">Python Scripts</p>
+            <p className= "py-1 text-yellow-600">JavaScripts</p>
+            <p className= "py-1 text-teal-600">TypeScripts</p>
+
+
+          </div>
+          </div>
+          <div>
+            <Image src={design} width={100} height={100} />
+            <h3 className="text-lg font-medium pt-8 pb-2 ">Simple Web development projects</h3>
+            <p>
+              Created using next.js, react designs suited to run on localhost
+            </p>
+            <h4 className="py-4 text-red-500"> Design tools I use</h4>
+            <p className= "py-1 text-teal-600">Python Scripts</p>
+            <p className= "py-1 text-yellow-600">JavaScripts</p>
+            <p className= "py-1 text-teal-600">TypeScripts</p>
+
+
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">OparaPortfolio</h3>
+            <p>
+              Created using next.js, react designs suited to run on localhost
+            </p>
+            <h4 className="py-4 text-red-500"> Design tools I use</h4>
+            <p className= "py-1 text-teal-600">Python Scripts</p>
+            <p className= "py-1 text-yellow-600">JavaScripts</p>
+            <p className= "py-1 text-teal-600">TypeScripts</p>
+          </div>
+          <div>
+            <Image src={web1} />
+          </div>
+          <div>
+            <Image src={web2} />
+          </div>
+          <div>
+            <Image src={web3} />
+          </div>
+          <div>
+            <Image src={web4} />
+          </div>
+          <div>
+            <Image src={web5} />
           </div>
         </section>
 
